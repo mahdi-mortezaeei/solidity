@@ -24,13 +24,12 @@ contract types {
     
     /*  input - output */
     // call local output
-    function sample3() public pure returns(uint) {
-        uint myNumber = 10 ;
+    function sample4(uint myNumber ) public pure returns(uint) {
         return  (myNumber);
     }
     
     /* set inline input - call output */
-    function sample4() public pure returns(uint myNumber , string memory , string memory location ) {
+    function sample5() public pure returns(uint myNumber , string memory , string memory location ) {
         myNumber = 10 ;
         string memory myFamily = 'mortezaeei'; 
         location = 'home' ;
@@ -38,10 +37,15 @@ contract types {
     }
     
     /* set inline string input in two ways - call output */
-    function sample5( string memory myCity ,string memory myCountry ) public view returns(string memory , string memory myNick , string memory , string memory) {
+    function sample6( string memory myCity ,string memory myCountry ) public view returns(string memory , string memory myNick , string memory , string memory) {
         myNick = "jonz" ;
         myCity = 'tehran' ;
         return  (myName , myNick , myCity , myCountry);
+    }
+
+     /* no input - output without return */ 
+    function sample7() public view returns(int x) {
+     x = myVar ;
     }
     
 }

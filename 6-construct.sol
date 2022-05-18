@@ -13,9 +13,7 @@ contract sample {
        if ( msg.sender != owner){
            return (false);
        }
-    
     return (true);
-       
    } 
 
 }

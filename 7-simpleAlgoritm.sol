@@ -30,7 +30,7 @@ contract sampleAlgoritms {
        return (i);
     } 
     
-    function evenNimberBakhshPazir3(int number) public pure returns(uint8){
+    function evenNumberBakhshPazir3(int number) public pure returns(uint8){
        uint8 counter = 0;  // counter
        int x = 0;    // number
        while( x < number ){
